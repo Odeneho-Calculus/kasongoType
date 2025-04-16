@@ -1,5 +1,3 @@
-Here is a complete and valid `README.md` for the KasongoType project:
-
 ```markdown
 # KasongoType - Cyberpunk Typing Trainer
 
@@ -116,3 +114,6 @@ MIT License
 ```
 
 This `README.md` provides a comprehensive overview of the KasongoType project, including features, project structure, requirements, installation instructions, and guidelines for development and testing.
+=======
+# kasongoType
+KasongoType is a next-generation typing trainer with a cyberpunk aesthetic. It helps users improve their typing skills through an immersive futuristic interface themed in neon green on deep black.
