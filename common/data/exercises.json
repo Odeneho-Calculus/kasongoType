@@ -1,0 +1,70 @@
+{
+    "levels": {
+        "beginner": [
+            {
+                "id": "b1",
+                "title": "Home Row Basics",
+                "text": "asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl;"
+            },
+            {
+                "id": "b2",
+                "title": "Top Row Practice",
+                "text": "qwer tyui qwer tyui qwer tyui qwer tyui qwer tyui qwer tyui qwer tyui qwer tyui"
+            },
+            {
+                "id": "b3",
+                "title": "Bottom Row Drills",
+                "text": "zxcv bnm, zxcv bnm, zxcv bnm, zxcv bnm, zxcv bnm, zxcv bnm, zxcv bnm, zxcv bnm,"
+            },
+            {
+                "id": "b4",
+                "title": "Simple Words",
+                "text": "the and for you that this with have from what been one had not word all were when your can said there use each which she how their will other about many then them some these would"
+            }
+        ],
+        "intermediate": [
+            {
+                "id": "i1",
+                "title": "Common Phrases",
+                "text": "The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump!"
+            },
+            {
+                "id": "i2",
+                "title": "Numbers & Symbols",
+                "text": "1234 5678 9000 @#$% ^&*() 1234 5678 9000 @#$% ^&*() 1234 5678 9000 @#$% ^&*()"
+            },
+            {
+                "id": "i3",
+                "title": "Mixed Content",
+                "text": "In 2025, over 75% of developers used KasongoType to improve their typing speed from 45 WPM to 80+ WPM in just 14 days!"
+            },
+            {
+                "id": "i4",
+                "title": "Cyberpunk Terms",
+                "text": "Netrunner console matrix cyberspace deck neural implant cyberdeck wetware ICE interface protocol digital ghost encryption algorithm virus firewall"
+            }
+        ],
+        "advanced": [
+            {
+                "id": "a1",
+                "title": "Python Code",
+                "text": "def cyberpunk_function(matrix_level=10):\n    netrunners = ['Case', 'Molly', 'Neuromancer']\n    for runner in netrunners:\n        print(f'{runner} is jacking into the matrix at level {matrix_level}')\n    return {'status': 'connected', 'security_level': matrix_level}"
+            },
+            {
+                "id": "a2",
+                "title": "Cyberpunk Prose",
+                "text": "The sky above the port was the color of television, tuned to a dead channel. All the speed he took, all the turns he'd taken and the corners he'd cut in Night City, and still he'd see the matrix in his sleep, bright lattices of logic unfolding across that colorless void."
+            },
+            {
+                "id": "a3",
+                "title": "Technical Documentation",
+                "text": "KasongoType implements a real-time WPM calculation algorithm using a rolling average window of 5 seconds. The accuracy metric accounts for corrections made during typing, weighing recent keystrokes more heavily. Set TYPING_ENGINE_PRECISION=0.95 in your environment variables for maximum precision."
+            },
+            {
+                "id": "a4",
+                "title": "Speed Challenge",
+                "text": "The five boxing wizards jump quickly to explore the vast cybernetic mainframe. Exploring quantum computational algorithms requires significant expertise in both theoretical physics and practical programming paradigms. Virtual reality interfaces dominate the cyberpunk aesthetics of futuristic user experience design."
+            }
+        ]
+    }
+}

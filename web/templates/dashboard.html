@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | KasongoType</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/favicon.ico">
+    <!-- Chart.js for analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Date adapter for Chart.js time scales -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.svg" alt="KasongoType Logo">
+            <h1>KasongoType</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Typing</a></li>
+                <li><a href="/exercises">Exercises</a></li>
+                <li><a href="/dashboard" class="active">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cyberpunk-container">
+            <div class="neon-border">
+                <h2>Your Typing Performance</h2>
+
+                <div class="stats-overview">
+                    <div class="stat-card">
+                        <div class="stat-title">Best WPM</div>
+                        <div class="stat-value" id="best-wpm">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Average WPM</div>
+                        <div class="stat-value" id="avg-wpm">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Average Accuracy</div>
+                        <div class="stat-value" id="avg-accuracy">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">Sessions</div>
+                        <div class="stat-value" id="total-sessions">--</div>
+                    </div>
+                </div>
+
+                <div class="recent-sessions">
+                    <h3>Recent Sessions</h3>
+                    <table class="cyberpunk-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Exercise</th>
+                                <th>WPM</th>
+                                <th>Accuracy</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sessions-table">
+                            <tr>
+                                <td colspan="5">Loading sessions data...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 KasongoType - Cyberpunk Typing Trainer</p>
+    </footer>
+
+    <script src="/static/js/analytics.js"></script>
+    <script src="/static/js/ui.js"></script>
+</body>
+
+</html>

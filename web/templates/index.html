@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KasongoType | Cyberpunk Typing Trainer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.svg" alt="KasongoType Logo">
+            <h1>KasongoType</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Typing</a></li>
+                <li><a href="/exercises">Exercises</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cyberpunk-container">
+            <div class="neon-border">
+                <div class="stats-panel">
+                    <div class="stat">
+                        <div class="stat-label">WPM</div>
+                        <div class="stat-value" id="wpm">0</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Accuracy</div>
+                        <div class="stat-value" id="accuracy">100%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Time</div>
+                        <div class="stat-value" id="time">0s</div>
+                    </div>
+                </div>
+
+                <div class="typing-area">
+                    <div class="exercise-title" id="exercise-title">Loading exercise...</div>
+                    <div class="text-display" id="text-display">
+                        <div class="text-wrapper">Loading text...</div>
+                    </div>
+                    <div class="input-area">
+                        <div class="prompt">Begin typing to start...</div>
+                        <input type="text" id="hidden-input" autocomplete="off" autofocus>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="reset-btn" class="cyberpunk-btn">Reset</button>
+                    <button id="new-exercise-btn" class="cyberpunk-btn">New Exercise</button>
+                    <div class="level-selector">
+                        <label for="level-select">Level:</label>
+                        <select id="level-select">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="timer-controls">
+                    <label for="timer-mode">Timer Mode:</label>
+                    <select id="timer-mode" class="cyberpunk-select">
+                        <option value="countup">Count Up</option>
+                        <option value="countdown" selected>Countdown</option>
+                    </select>
+                    <label for="time-limit">Time Limit (s):</label>
+                    <input type="number" id="time-limit" min="10" max="300" value="60" class="cyberpunk-input">
+                </div>
+            </div>
+
+            <div class="results-panel hidden" id="results-panel">
+                <h2>Session Complete!</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-label">Final WPM</div>
+                        <div class="result-value" id="final-wpm">0</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Accuracy</div>
+                        <div class="result-value" id="final-accuracy">0%</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Time</div>
+                        <div class="result-value" id="final-time">0s</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Errors</div>
+                        <div class="result-value" id="final-errors">0</div>
+                    </div>
+                </div>
+                <div class="result-buttons">
+                    <button id="try-again-btn" class="cyberpunk-btn">Try Again</button>
+                    <button id="next-exercise-btn" class="cyberpunk-btn">Next Exercise</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 KasongoType - Cyberpunk Typing Trainer</p>
+    </footer>
+
+    <script src="/static/js/typing.js"></script>
+    <script src="/static/js/ui.js"></script>
+</body>
+
+</html>

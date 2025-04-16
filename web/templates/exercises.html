@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises | KasongoType</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.svg" alt="KasongoType Logo">
+            <h1>KasongoType</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Typing</a></li>
+                <li><a href="/exercises" class="active">Exercises</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cyberpunk-container">
+            <div class="neon-border">
+                <h2>Typing Exercises</h2>
+
+                <div class="level-tabs">
+                    <button class="tab-btn active" data-level="beginner">Beginner</button>
+                    <button class="tab-btn" data-level="intermediate">Intermediate</button>
+                    <button class="tab-btn" data-level="advanced">Advanced</button>
+                </div>
+
+                <div class="exercises-list" id="exercises-container">
+                    <div class="loading">Loading exercises...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 KasongoType - Cyberpunk Typing Trainer</p>
+    </footer>
+
+    <script src="/static/js/ui.js"></script>
+    <script>
+        // Load exercises when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            const exercisesContainer = document.getElementById('exercises-container');
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            let currentLevel = 'beginner';
+
+            // Tab button click handler
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Update active tab
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Load exercises for selected level
+                    currentLevel = this.dataset.level;
+                    loadExercises(currentLevel);
+                });
+            });
+
+            // Load exercises function
+            function loadExercises(level) {
+                exercisesContainer.innerHTML = '<div class="loading">Loading exercises...</div>';
+
+                fetch(`/api/exercises?level=${level}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'success' && data.exercises.length > 0) {
+                            exercisesContainer.innerHTML = '';
+
+                            data.exercises.forEach(exercise => {
+                                const exerciseCard = document.createElement('div');
+                                exerciseCard.className = 'exercise-card';
+                                exerciseCard.innerHTML = `
+                                    <h3>${exercise.title}</h3>
+                                    <p class="exercise-preview">${exercise.text.substring(0, 50)}${exercise.text.length > 50 ? '...' : ''}</p>
+                                    <button class="cyberpunk-btn start-exercise" data-id="${exercise.id}" data-level="${level}">Start</button>
+                                `;
+                                exercisesContainer.appendChild(exerciseCard);
+                            });
+
+                            // Add event listeners to start buttons
+                            document.querySelectorAll('.start-exercise').forEach(button => {
+                                button.addEventListener('click', function () {
+                                    const exerciseId = this.dataset.id;
+                                    const exerciseLevel = this.dataset.level;
+                                    window.location.href = `/?level=${exerciseLevel}&exercise=${exerciseId}`;
+                                });
+                            });
+                        } else {
+                            exercisesContainer.innerHTML = '<div class="no-exercises">No exercises found for this level.</div>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error loading exercises:', error);
+                        exercisesContainer.innerHTML = '<div class="error">Failed to load exercises. Please try again.</div>';
+                    });
+            }
+
+            // Load initial exercises (beginner level)
+            loadExercises(currentLevel);
+        });
+    </script>
+</body>
+
+</html>

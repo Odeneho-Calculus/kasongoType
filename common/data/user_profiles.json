@@ -1,0 +1,230 @@
+{
+  "guest": {
+    "created_at": "2025-04-16T09:00:00",
+    "last_active": "2025-04-16T09:30:45",
+    "sessions": [
+      {
+        "timestamp": "2025-04-16T09:10:23",
+        "exercise_id": "b1",
+        "wpm": 45.2,
+        "accuracy": 97.5,
+        "time_elapsed": 35.6
+      },
+      {
+        "timestamp": "2025-04-16T09:20:11",
+        "exercise_id": "b2",
+        "wpm": 48.7,
+        "accuracy": 96.8,
+        "time_elapsed": 42.3
+      },
+      {
+        "timestamp": "2025-04-16T09:30:45",
+        "exercise_id": "i1",
+        "wpm": 52.1,
+        "accuracy": 98.2,
+        "time_elapsed": 38.9
+      }
+    ],
+    "stats": {
+      "best_wpm": 52.1,
+      "average_wpm": 48.67,
+      "total_time": 116.8,
+      "exercises_completed": 3,
+      "accuracy": 97.5
+    }
+  },
+  "web_user_3980408945259100525": {
+    "created_at": "2025-04-16T14:30:08.537927",
+    "last_active": "2025-04-16T14:30:08.537927",
+    "sessions": [
+      {
+        "timestamp": "2025-04-16T14:30:08.537927",
+        "exercise_id": "a3",
+        "wpm": 0,
+        "accuracy": 0.0,
+        "time_elapsed": 0.0
+      }
+    ],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0.0,
+      "total_time": 0.0,
+      "exercises_completed": 1,
+      "accuracy": 0.0
+    }
+  },
+  "web_user_-3709236631232017724": {
+    "created_at": "2025-04-16T14:37:51.774213",
+    "last_active": "2025-04-16T14:37:51.774213",
+    "sessions": [],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0,
+      "total_time": 0,
+      "exercises_completed": 0,
+      "accuracy": 100
+    }
+  },
+  "web_user_-5547783086920997680": {
+    "created_at": "2025-04-16T14:43:12.188636",
+    "last_active": "2025-04-16T18:44:55.893299",
+    "sessions": [
+      {
+        "timestamp": "2025-04-16T15:18:14.604943",
+        "exercise_id": "i3",
+        "wpm": 0,
+        "accuracy": 0.0,
+        "time_elapsed": 0.0
+      },
+      {
+        "timestamp": "2025-04-16T16:37:29.964141",
+        "exercise_id": "i2",
+        "wpm": 105.10749630303718,
+        "accuracy": 0,
+        "time_elapsed": 8.791
+      },
+      {
+        "timestamp": "2025-04-16T16:39:30.087783",
+        "exercise_id": "b3",
+        "wpm": 29.464785230310188,
+        "accuracy": 45.56962025316456,
+        "time_elapsed": 32.174
+      },
+      {
+        "timestamp": "2025-04-16T18:35:19.541369",
+        "exercise_id": "b4",
+        "wpm": 44.03624584853827,
+        "accuracy": 98.88268156424581,
+        "time_elapsed": 48.778
+      },
+      {
+        "timestamp": "2025-04-16T18:36:54.153141",
+        "exercise_id": "a1",
+        "wpm": 17.886908578022823,
+        "accuracy": 6.451612903225806,
+        "time_elapsed": 62.392
+      },
+      {
+        "timestamp": "2025-04-16T18:44:55.893299",
+        "exercise_id": "a3",
+        "wpm": 30.950333972620857,
+        "accuracy": 97.43589743589743,
+        "time_elapsed": 60.484
+      }
+    ],
+    "stats": {
+      "best_wpm": 105.10749630303718,
+      "average_wpm": 37.91,
+      "total_time": 212.619,
+      "exercises_completed": 6,
+      "accuracy": 41.39
+    }
+  },
+  "web_user_-9114213600777480578": {
+    "created_at": "2025-04-16T16:45:44.651812",
+    "last_active": "2025-04-16T16:45:44.651812",
+    "sessions": [],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0,
+      "total_time": 0,
+      "exercises_completed": 0,
+      "accuracy": 100
+    }
+  },
+  "web_user_17724534852132429": {
+    "created_at": "2025-04-16T16:51:11.106467",
+    "last_active": "2025-04-16T16:51:11.107484",
+    "sessions": [],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0,
+      "total_time": 0,
+      "exercises_completed": 0,
+      "accuracy": 100
+    }
+  },
+  "web_user_4500152468165580118": {
+    "created_at": "2025-04-16T16:56:30.743170",
+    "last_active": "2025-04-16T16:56:30.743170",
+    "sessions": [],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0,
+      "total_time": 0,
+      "exercises_completed": 0,
+      "accuracy": 100
+    }
+  },
+  "web_user_-6195111803496199598": {
+    "created_at": "2025-04-16T17:02:53.643360",
+    "last_active": "2025-04-16T17:04:26.369183",
+    "sessions": [
+      {
+        "timestamp": "2025-04-16T17:04:26.369183",
+        "exercise_id": "i4",
+        "wpm": 24.598360109326048,
+        "accuracy": 92.6829268292683,
+        "time_elapsed": 60.004
+      }
+    ],
+    "stats": {
+      "best_wpm": 24.598360109326048,
+      "average_wpm": 24.6,
+      "total_time": 60.004,
+      "exercises_completed": 1,
+      "accuracy": 92.68
+    }
+  },
+  "web_user_-6351880601408599027": {
+    "created_at": "2025-04-16T17:13:12.239310",
+    "last_active": "2025-04-16T17:13:12.239310",
+    "sessions": [],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0,
+      "total_time": 0,
+      "exercises_completed": 0,
+      "accuracy": 100
+    }
+  },
+  "web_user_6893463356696244230": {
+    "created_at": "2025-04-16T17:17:44.013825",
+    "last_active": "2025-04-16T17:17:44.184430",
+    "sessions": [
+      {
+        "timestamp": "2025-04-16T17:17:44.014837",
+        "exercise_id": "b2",
+        "wpm": 14.5,
+        "accuracy": 74.4,
+        "time_elapsed": 23.994296550750732
+      },
+      {
+        "timestamp": "2025-04-16T17:17:44.184430",
+        "exercise_id": "b2",
+        "wpm": 21.62162162162162,
+        "accuracy": 97.43589743589743,
+        "time_elapsed": 21.645
+      }
+    ],
+    "stats": {
+      "best_wpm": 21.62162162162162,
+      "average_wpm": 18.06,
+      "total_time": 45.63929655075073,
+      "exercises_completed": 2,
+      "accuracy": 85.92
+    }
+  },
+  "web_user_4560582487774725805": {
+    "created_at": "2025-04-16T17:20:49.016324",
+    "last_active": "2025-04-16T17:20:49.016324",
+    "sessions": [],
+    "stats": {
+      "best_wpm": 0,
+      "average_wpm": 0,
+      "total_time": 0,
+      "exercises_completed": 0,
+      "accuracy": 100
+    }
+  }
+}
