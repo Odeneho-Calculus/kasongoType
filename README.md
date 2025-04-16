@@ -14,7 +14,6 @@
 - **Multiple Difficulty Levels** – From beginner warm-ups to expert drills.
 - **Consistent UI** – Unified experience across web and desktop.
 
----
 
 ## 📁 Project Structure
 
@@ -34,7 +33,6 @@ KasongoType/
 └── tests/                 ← Unit tests
 </pre>
 
----
 
 ## 🧰 Requirements
 
@@ -48,17 +46,15 @@ KasongoType/
 - PyQt5
 - PyQtWebEngine
 
----
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/KasongoType.git
+git clone https://github.com/Odeneho-Calculus/KasongoType.git
 cd KasongoType
 pip install -r desktop/requirements.txt
 ```
 
----
 
 ## 🖥️ Running the App
 
@@ -76,7 +72,6 @@ Then visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 python desktop/main.py
 ```
 
----
 
 ## 🧪 Running Tests
 
@@ -84,7 +79,6 @@ python desktop/main.py
 python -m unittest discover tests
 ```
 
----
 
 ## 🛠️ Development Guide
 
@@ -114,16 +108,14 @@ You can change the cyberpunk look by editing:
 web/static/css/style.css
 ```
 
----
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
----
 
 ## 🙏 Credits
 
 - Created for cyberpunk typing enthusiasts.
 - Inspired by classic typing trainers and futuristic UIs.
-```
+
